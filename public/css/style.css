@@ -30,3 +30,78 @@
     border-width: 2px;
     border-style: outset;
 }
+
+body{
+
+    background-image: url(http://www.selfthrive.com/wp-content/uploads/2016/10/Man-Reading-Book-Lap-.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.pos{
+        
+    
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 2500%;
+        left: 50%;
+        width: 200px;
+        height: 60px;
+        text-align: center;
+        line-height: 50px;
+        color: #fff;
+        font-size: 24px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        box-sizing: border-box;
+        background: linear-gradient(90deg, #f3f7f8,#acb4b2,#5e5f5f, #d1cbcb);
+        background-size: 400px;
+        border-radius: 30px;
+}
+.pos:hover
+{
+    animation: animate 8s linear infinite;
+}
+
+@keyframes animate
+
+{
+    0%
+    {
+        background-position: 0%;
+    }
+    100%
+    {
+        background-position: 400%;
+    }
+}
+
+.pos::before
+{
+    content:'';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg, #f3f7f8,#acb4b2,#5e5f5f, #2c2727);
+    background-size: 400px;
+    border-radius: 40px;
+    opacity: 0;
+    transition: 0.5s;
+
+}
+
+.pos:hover:before
+{
+    filter: blur(20px);
+    opacity: 1;
+    animation: animate 8s linear infinite;
+}
+    
+   
+
+

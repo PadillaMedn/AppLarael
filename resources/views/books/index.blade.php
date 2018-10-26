@@ -2,7 +2,7 @@
 
 @section('content')
 
-<h1 class="text-center">LIBROS</h1>
+<h1 class="text-center" style="color:white" >LIBROS</h1>
 
 
 <div class="container">
@@ -13,7 +13,7 @@
       <div class="alert alert-info">{{ Session::get('message') }}</div>
     @endif
 
-	<table class="table">
+	<table class="table" style="background-color:white">
   <thead class="thead-dark">
     <tr>
       <th scope="col">id</th>
@@ -46,9 +46,9 @@
   @endforeach
    
   </tbody>
-</table>
+ </table>
 
-{{ $books->links() }}
+ {{ $books->links() }}
 
 
 </div>
